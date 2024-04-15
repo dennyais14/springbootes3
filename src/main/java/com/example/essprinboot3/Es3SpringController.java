@@ -12,7 +12,7 @@ public class Es3SpringController {
     }
 
     @RequestMapping(method = RequestMethod.POST, path = "/name")
-    public String postName(@RequestParam String name) {
+    public String postName(@RequestBody String name) {
         return new StringBuilder(name).reverse().toString();
     }
 }
